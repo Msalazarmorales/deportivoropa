@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-divice-width, initial-scale=1.0">
+	<title> zapatillas </title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+<body>
+
+	<div class="encabezado">
+		<img src="URBAN SPORT.PNG">
+	</div>
+	
+	<div class="menu">
+		<a href="index.html">inicio</a>
+
+		<a href="pag2.html">balones</a>
+
+		<a href="pag3.html">conos</a>
+
+		<a href="pag5.html">perneras</a>
+	</div>
+
+	<h2>Nuestros Productos</h2>
+	
+	
+	<div class="contenedor-flex">
+	
+		<div class="producto">
+			<img src="guayos adidas.jpg" alt="guayos adidas">
+			<h3>guayos</h3>
+			<p>Precio: $35.000</h3>
+			<button onclick="agregar('guayos', 35000)">
+				Agregar al carrito 
+			</button>
+		</div>
+		
+		<div class="producto">
+			<img src="micro.jpg" alt="micro">
+			<h3>zapatollas de micro</h3>
+			<p>Precio: $65.000</p>
+			<button onclick="agregar('zapatillas de micro', 65000)">
+				Agregar al carrito
+			</button>
+		</div>
+		
+		<div class="producto">
+			<img src="cintetica.jpg" alt="cintetica">
+			<h3>zapatillas de cintetica</h3>
+			<p>Precio: $80.000</p>
+			<button onclick="agregar('zapatillas de cintetica', 80000)">
+				Agregar al carrito
+			</button>
+		</div>
+		
+	</div>
+	
+	<div class="carrito">
+		<h1>Mi carrito de compras</h1>
+		
+		<ul id="lista-carrito"></ul>
+		
+		<h3>Total: $<span id="total">0</span></h3>
+		
+		<button onclick="vaciarCarrito()">
+			vaciar carrito
+		</button>
+	</div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>

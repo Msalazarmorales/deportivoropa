@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-divice-width, initial-scale=1.0">
+	<title> balones </title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+<body>
+
+	<div class="encabezado">
+		<img src="URBAN SPORT.PNG">
+	</div>
+	
+	<div class="menu">
+		<a href="index.html">inicio</a>
+
+		<a href="pag3.html">conos</a>
+
+		<a href="pag4.html">zapatillas</a>
+
+		<a href="pag5.html">perneras</a>
+	</div>
+
+	<h2>Nuestros Productos</h2>
+	
+	
+	<div class="contenedor-flex">
+	
+		<div class="producto">
+			<img src="balon de futbol.jpg" alt="balon">
+			<h3>balon de futbol</h3>
+			<p>Precio: $35.000</h3>
+			<button onclick="agregar('balon', 35000)">
+				Agregar al carrito 
+			</button>
+		</div>
+		
+		<div class="producto">
+			<img src="balon de voleibol.jpg" alt="balon de voleibol">
+			<h3>balon de voleibol</h3>
+			<p>Precio: $65.000</p>
+			<button onclick="agregar('balon de voleibol', 65000)">
+				Agregar al carrito
+			</button>
+		</div>
+		
+		<div class="producto">
+			<img src="baloncesto.jpg" alt="baloncesto">
+			<h3>balon de baloncesto</h3>
+			<p>Precio: $80.000</p>
+			<button onclick="agregar('balon de baloncesto', 80000)">
+				Agregar al carrito
+			</button>
+		</div>
+		
+	</div>
+	
+	<div class="carrito">
+		<h1>Mi carrito de compras</h1>
+		
+		<ul id="lista-carrito"></ul>
+		
+		<h3>Total: $<span id="total">0</span></h3>
+		
+		<button onclick="vaciarCarrito()">
+			vaciar carrito
+		</button>
+	</div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>
+
